@@ -29,6 +29,10 @@ export const DropdownTable = ({
     // Nothing happen when we change the filter!!!!!!
     console.log(value);
   };
+  const onFilterValueChanged = (value: any) => {
+    // Nothing happen when we change the filter!!!!!!
+    console.log(value);
+  };
   return (
     <DataGrid
       id="test-data-grid"
@@ -40,7 +44,11 @@ export const DropdownTable = ({
       height="100%"
     >
       <FilterPanel visible />
-      <FilterBuilder fields={fields} onValueChange={onFilterValueChange} />
+      <FilterBuilder
+        fields={fields}
+        onValueChanged={onFilterValueChanged}
+        onValueChange={onFilterValueChange}
+      />
       <Selection mode="single" />
       <Paging enabled={true} pageSize={10} />
       <ColumnChooser enabled mode="select" />
