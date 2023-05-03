@@ -130,7 +130,7 @@ function Dropdown() {
             contentRender={dataGridRender}
           >
             <DropDownOptions
-              width={700}
+              width={400}
               closeOnOutsideClick={false}
               hideOnOutsideClick={false}
             />
