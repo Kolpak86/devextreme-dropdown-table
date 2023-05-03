@@ -35,7 +35,7 @@ export default function Table() {
         <Column dataField="Prefix" caption="Title" hidingPriority="1" />
         <Column dataField="FirstName" hidingPriority="2" />
         <Column dataField="LastName" hidingPriority="3" />
-        <Column dataField="Position" width={60} hidingPriority="4" />
+        <Column dataField="Position" width={100} hidingPriority="5" />
         <Column
           dataField="StateID"
           caption="State"
@@ -45,7 +45,7 @@ export default function Table() {
         >
           <Dropdown />
         </Column>
-        <Column dataField="BirthDate" dataType="date" hidingPriority="5" />
+        <Column dataField="BirthDate" dataType="date" hidingPriority="4" />
       </DataGrid>
     </div>
   );
