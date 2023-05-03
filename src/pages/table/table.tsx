@@ -32,19 +32,20 @@ export default function Table() {
         />
         <ColumnChooser enabled mode="select" />
 
-        <Column dataField="Prefix" caption="Title" width={55} />
-        <Column dataField="FirstName" />
-        <Column dataField="LastName" />
-        <Column dataField="Position" width={170} />
+        <Column dataField="Prefix" caption="Title" hidingPriority="1" />
+        <Column dataField="FirstName" hidingPriority="2" />
+        <Column dataField="LastName" hidingPriority="3" />
+        <Column dataField="Position" width={60} hidingPriority="4" />
         <Column
           dataField="StateID"
           caption="State"
-          width={225}
+          width={175}
+          hidingPriority="6"
           editCellComponent={Dropdown}
         >
           <Dropdown />
         </Column>
-        <Column dataField="BirthDate" dataType="date" />
+        <Column dataField="BirthDate" dataType="date" hidingPriority="5" />
       </DataGrid>
     </div>
   );
